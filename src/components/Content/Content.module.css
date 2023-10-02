@@ -87,3 +87,10 @@
   color: hsl(236, 13%, 42%);
   font-size: 14px;
 }
+
+.card_container {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  gap: 10px;
+}

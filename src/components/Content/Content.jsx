@@ -77,7 +77,7 @@ function Content() {
           ))}
         </Box>
       </Box>
-      <Flex mt={50} justify="space-between" rowGap={20}>
+      <Box className={classes.card_container}>
         {cards.map((card) => (
           <Flex className={classes.hover} key={card.title} w={350} gap={20}>
             <Image src={card.image} height={120} />
@@ -100,7 +100,7 @@ function Content() {
             </Flex>
           </Flex>
         ))}
-      </Flex>
+      </Box>
     </Box>
   );
 }
