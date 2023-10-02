@@ -77,9 +77,14 @@ function Content() {
           ))}
         </Box>
       </Box>
-      <Box className={classes.card_container}>
+      <Box className={classes.cards_container}>
         {cards.map((card) => (
-          <Flex className={classes.hover} key={card.title} w={350} gap={20}>
+          <Flex
+            className={classes.hover}
+            style={{ flex: "1", minWidth: "300px" }}
+            key={card.title}
+            gap={20}
+          >
             <Image src={card.image} height={120} />
             <Flex direction="column" justify="space-between">
               <Text
