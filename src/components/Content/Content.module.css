@@ -75,6 +75,11 @@
   font-size: 18px;
 }
 
+.card_title:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+
 .card_subtitle {
   color: hsl(236, 13%, 42%);
   font-size: 14px;
