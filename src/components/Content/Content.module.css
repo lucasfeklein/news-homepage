@@ -17,6 +17,8 @@
 
 .title_container {
   display: flex;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .title_container > * {
