@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 280px;
 }
 
 .title_container {
@@ -64,6 +65,11 @@
 .news_card {
   border-bottom: 1px solid hsl(233, 8%, 79%);
   padding-bottom: 30px;
+  cursor: pointer;
+}
+
+.news_card:hover .news_subtitle {
+  color: hsl(35, 77%, 62%);
 }
 
 .news_card:last-child {
@@ -93,5 +99,12 @@
   display: flex;
   margin-top: 50px;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 10px;
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 45px;
+  }
 }
