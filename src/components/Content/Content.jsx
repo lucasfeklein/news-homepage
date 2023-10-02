@@ -89,14 +89,12 @@ function Content() {
                   fontWeight: "bold",
                 }}
               >
-                01
+                {card.number}
               </Text>
               <Title order={3} className={classes.card_title}>
-                Reviving Retro PCs
+                {card.title}
               </Title>
-              <Text className={classes.card_subtitle}>
-                What happens when old PCs are given modern upgrades?
-              </Text>
+              <Text className={classes.card_subtitle}>{card.subtitle}</Text>
             </Flex>
           </Flex>
         ))}
