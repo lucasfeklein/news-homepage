@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Image, Text, Title } from "@mantine/core";
 import classes from "./Content.module.css";
 
-const cards = [
+const news = [
   {
     title: "Hydrogen VS Electric Cars",
     subtitle: "Will hydrogen-fueled cars ever catch up to EVs?",
@@ -15,6 +15,27 @@ const cards = [
     title: "Is VC Funding Drying Up?",
     subtitle:
       "Private funding by VC firms is down 50% YOY. We take a look at what that means.",
+  },
+];
+
+const cards = [
+  {
+    number: "01",
+    image: "./image-retro-pcs.jpg",
+    title: "Reviving Retro PCs",
+    subtitle: "What happens when old PCs are given modern upgrades?",
+  },
+  {
+    number: "02",
+    image: "./image-top-laptops.jpg",
+    title: "Top 10 Laptops of 2022",
+    subtitle: "What happens when old PCs are given modern upgrades?",
+  },
+  {
+    number: "03",
+    image: "./image-gaming-growth.jpg",
+    title: "The Growth of Gaming",
+    subtitle: "How the pandemic has sparked fresh opportunities",
   },
 ];
 
@@ -48,7 +69,7 @@ function Content() {
           <Title size="35px" style={{ color: "hsl(35, 77%, 62%)" }} order={2}>
             New
           </Title>
-          {cards.map((card) => (
+          {news.map((card) => (
             <Box key={card.title} className={classes.news_card}>
               <Text className={classes.news_subtitle}>{card.title}</Text>
               <Text className={classes.news_paragraph}>{card.subtitle}</Text>
@@ -57,30 +78,16 @@ function Content() {
         </Box>
       </Box>
       <Flex wrap="wrap" mt={50}>
-        <Flex w={350}>
-          <Image src="./image-retro-pcs.jpg" height={120} />
-          <Box>
-            <Text>01</Text>
-            <Title order={3}>Reviving Retro PCs</Title>
-            <Text>What happens when old PCs are given modern upgrades?</Text>
-          </Box>
-        </Flex>
-        <Flex w={350}>
-          <Image src="./image-retro-pcs.jpg" height={120} />
-          <Box>
-            <Text>01</Text>
-            <Title order={3}>Reviving Retro PCs</Title>
-            <Text>What happens when old PCs are given modern upgrades?</Text>
-          </Box>
-        </Flex>
-        <Flex w={350}>
-          <Image src="./image-retro-pcs.jpg" height={120} />
-          <Box>
-            <Text>01</Text>
-            <Title order={3}>Reviving Retro PCs</Title>
-            <Text>What happens when old PCs are given modern upgrades?</Text>
-          </Box>
-        </Flex>
+        {cards.map((card) => (
+          <Flex key={card.title} w={350} gap={20}>
+            <Image src={card.image} height={120} />
+            <Box>
+              <Text>01</Text>
+              <Title order={3}>Reviving Retro PCs</Title>
+              <Text>What happens when old PCs are given modern upgrades?</Text>
+            </Box>
+          </Flex>
+        ))}
       </Flex>
     </Box>
   );
