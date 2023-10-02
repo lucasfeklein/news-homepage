@@ -4,7 +4,7 @@
 }
 
 .main_content {
-  flex: 2.5;
+  flex: 2.3;
 }
 
 .news_container {
@@ -13,7 +13,6 @@
 
 .title_container {
   display: flex;
-  gap: 20px;
 }
 
 .title_container > * {
@@ -21,7 +20,20 @@
 }
 
 .title {
-  font-size: 55px;
+  font-size: 60px;
   font-weight: 800;
-  line-height: 50px;
+  line-height: 60px;
+}
+
+.button {
+  border-radius: 0;
+  background-color: hsl(5, 85%, 63%);
+  height: auto;
+  width: 180px;
+  letter-spacing: 3px;
+  padding: 15px 0;
+}
+
+.button:hover {
+  background-color: black;
 }
