@@ -69,23 +69,35 @@ function Content() {
           <Title size="35px" style={{ color: "hsl(35, 77%, 62%)" }} order={2}>
             New
           </Title>
-          {news.map((card) => (
-            <Box key={card.title} className={classes.news_card}>
-              <Text className={classes.news_subtitle}>{card.title}</Text>
-              <Text className={classes.news_paragraph}>{card.subtitle}</Text>
+          {news.map((news) => (
+            <Box key={news.title} className={classes.news_card}>
+              <Text className={classes.news_subtitle}>{news.title}</Text>
+              <Text className={classes.news_paragraph}>{news.subtitle}</Text>
             </Box>
           ))}
         </Box>
       </Box>
-      <Flex wrap="wrap" mt={50}>
+      <Flex mt={50} justify="space-between" rowGap={20}>
         {cards.map((card) => (
           <Flex key={card.title} w={350} gap={20}>
             <Image src={card.image} height={120} />
-            <Box>
-              <Text>01</Text>
-              <Title order={3}>Reviving Retro PCs</Title>
-              <Text>What happens when old PCs are given modern upgrades?</Text>
-            </Box>
+            <Flex direction="column" justify="space-between">
+              <Text
+                style={{
+                  fontSize: "30px",
+                  color: "hsl(233, 8%, 79%)",
+                  fontWeight: "bold",
+                }}
+              >
+                01
+              </Text>
+              <Title order={3} className={classes.card_title}>
+                Reviving Retro PCs
+              </Title>
+              <Text className={classes.card_subtitle}>
+                What happens when old PCs are given modern upgrades?
+              </Text>
+            </Flex>
           </Flex>
         ))}
       </Flex>

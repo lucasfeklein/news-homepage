@@ -69,3 +69,13 @@
   border-bottom: 0px solid hsl(233, 8%, 79%);
   padding-bottom: 0px;
 }
+
+.card_title {
+  color: hsl(240, 100%, 5%);
+  font-size: 18px;
+}
+
+.card_subtitle {
+  color: hsl(236, 13%, 42%);
+  font-size: 14px;
+}
