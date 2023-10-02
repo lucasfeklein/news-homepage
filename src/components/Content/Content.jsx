@@ -24,15 +24,34 @@ function Content() {
           </Box>
         </Box>
       </Box>
-      <Box className={classes.news_container}>
-        <Title
-          size="40px"
-          p={25}
-          style={{ color: "hsl(35, 77%, 62%)" }}
-          order={2}
-        >
+      <Box p={20} className={classes.news_container}>
+        <Title size="35px" style={{ color: "hsl(35, 77%, 62%)" }} order={2}>
           New
         </Title>
+        <Box className={classes.news_card}>
+          <Text className={classes.news_subtitle}>
+            Hydrogen VS Electric Cars
+          </Text>
+          <Text className={classes.news_paragraph}>
+            Will hydrogen-fueled cars ever catch up to EVs
+          </Text>
+        </Box>
+        <Box className={classes.news_card}>
+          <Text className={classes.news_subtitle}>
+            Hydrogen VS Electric Cars
+          </Text>
+          <Text className={classes.news_paragraph}>
+            Will hydrogen-fueled cars ever catch up to EVs
+          </Text>
+        </Box>
+        <Box className={classes.news_card}>
+          <Text className={classes.news_subtitle}>
+            Hydrogen VS Electric Cars
+          </Text>
+          <Text className={classes.news_paragraph}>
+            Will hydrogen-fueled cars ever catch up to EVs
+          </Text>
+        </Box>
       </Box>
     </Box>
   );

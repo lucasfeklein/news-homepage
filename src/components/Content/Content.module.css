@@ -10,6 +10,9 @@
 .news_container {
   flex: 1;
   background-color: hsl(240, 100%, 5%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .title_container {
@@ -40,7 +43,27 @@
 }
 
 .news_subtitle {
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.news_subtitle:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
 }
 
 .news_paragraph {
+  color: hsl(233, 8%, 79%);
+}
+
+.news_card {
+  border-bottom: 1px solid hsl(233, 8%, 79%);
+  padding-bottom: 20px;
+}
+
+.news_card:last-child {
+  border-bottom: 0px solid hsl(233, 8%, 79%);
+  padding-bottom: 0px;
 }
