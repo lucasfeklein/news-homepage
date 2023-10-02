@@ -79,7 +79,7 @@ function Content() {
       </Box>
       <Flex mt={50} justify="space-between" rowGap={20}>
         {cards.map((card) => (
-          <Flex key={card.title} w={350} gap={20}>
+          <Flex className={classes.hover} key={card.title} w={350} gap={20}>
             <Image src={card.image} height={120} />
             <Flex direction="column" justify="space-between">
               <Text
