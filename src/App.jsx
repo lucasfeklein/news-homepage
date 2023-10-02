@@ -1,4 +1,5 @@
 import { Box } from "@mantine/core";
+import Content from "./components/Content/Content";
 import Header from "./components/Header/Header";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <Box className="main-container">
       <div className="container">
         <Header />
+        <Content />
       </div>
     </Box>
   );
