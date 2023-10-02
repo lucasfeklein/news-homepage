@@ -1,6 +1,23 @@
 import { Box, Button, Image, Text, Title } from "@mantine/core";
 import classes from "./Content.module.css";
 
+const cards = [
+  {
+    title: "Hydrogen VS Electric Cars",
+    subtitle: "Will hydrogen-fueled cars ever catch up to EVs?",
+  },
+  {
+    title: "The Downsides of AI Artistry",
+    subtitle:
+      "What are the possible adverse effects of on-demand AI image generation",
+  },
+  {
+    title: "Is VC Funding Drying Up?",
+    subtitle:
+      "Private funding by VC firms is down 50% YOY. We take a look at what that means.",
+  },
+];
+
 function Content() {
   return (
     <Box className={classes.content_container}>
@@ -28,30 +45,12 @@ function Content() {
         <Title size="35px" style={{ color: "hsl(35, 77%, 62%)" }} order={2}>
           New
         </Title>
-        <Box className={classes.news_card}>
-          <Text className={classes.news_subtitle}>
-            Hydrogen VS Electric Cars
-          </Text>
-          <Text className={classes.news_paragraph}>
-            Will hydrogen-fueled cars ever catch up to EVs
-          </Text>
-        </Box>
-        <Box className={classes.news_card}>
-          <Text className={classes.news_subtitle}>
-            Hydrogen VS Electric Cars
-          </Text>
-          <Text className={classes.news_paragraph}>
-            Will hydrogen-fueled cars ever catch up to EVs
-          </Text>
-        </Box>
-        <Box className={classes.news_card}>
-          <Text className={classes.news_subtitle}>
-            Hydrogen VS Electric Cars
-          </Text>
-          <Text className={classes.news_paragraph}>
-            Will hydrogen-fueled cars ever catch up to EVs
-          </Text>
-        </Box>
+        {cards.map((card) => (
+          <Box key={card.title} className={classes.news_card}>
+            <Text className={classes.news_subtitle}>{card.title}</Text>
+            <Text className={classes.news_paragraph}>{card.subtitle}</Text>
+          </Box>
+        ))}
       </Box>
     </Box>
   );

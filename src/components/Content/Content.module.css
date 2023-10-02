@@ -62,7 +62,7 @@
 
 .news_card {
   border-bottom: 1px solid hsl(233, 8%, 79%);
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .news_card:last-child {
