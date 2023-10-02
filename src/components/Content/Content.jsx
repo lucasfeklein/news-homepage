@@ -24,7 +24,16 @@ function Content() {
           </Box>
         </Box>
       </Box>
-      <Box className={classes.news_container}>oi</Box>
+      <Box className={classes.news_container}>
+        <Title
+          size="40px"
+          p={25}
+          style={{ color: "hsl(35, 77%, 62%)" }}
+          order={2}
+        >
+          New
+        </Title>
+      </Box>
     </Box>
   );
 }

@@ -9,6 +9,7 @@
 
 .news_container {
   flex: 1;
+  background-color: hsl(240, 100%, 5%);
 }
 
 .title_container {
@@ -36,4 +37,10 @@
 
 .button:hover {
   background-color: black;
+}
+
+.news_subtitle {
+}
+
+.news_paragraph {
 }
