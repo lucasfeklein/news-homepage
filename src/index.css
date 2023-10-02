@@ -6,3 +6,20 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  border: 1px solid red;
+  width: 80%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
