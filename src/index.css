@@ -18,8 +18,3 @@ body {
   border: 1px solid red;
   width: 80%;
 }
-
-.header {
-  display: flex;
-  justify-content: space-between;
-}

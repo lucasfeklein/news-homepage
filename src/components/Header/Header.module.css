@@ -1,0 +1,19 @@
+.list {
+  display: flex;
+  gap: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.anchor {
+  color: hsl(236, 13%, 42%);
+}
+
+.anchor:hover {
+  color: hsl(5, 85%, 63%);
+  text-decoration: none;
+}

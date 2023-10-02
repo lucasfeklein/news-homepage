@@ -1,15 +1,41 @@
-import { Box, List, Title } from "@mantine/core";
+import { Anchor, Box, Image, List } from "@mantine/core";
+import classes from "./Header.module.css";
 
 function Header() {
   return (
-    <Box className="header">
-      <Title order={1}>W.</Title>
-      <List>
-        <List.Item style={{ listStyleType: "none" }}>Home</List.Item>
-        <List.Item style={{ listStyleType: "none" }}>New</List.Item>
-        <List.Item style={{ listStyleType: "none" }}>Popular</List.Item>
-        <List.Item style={{ listStyleType: "none" }}>Trending</List.Item>
-        <List.Item style={{ listStyleType: "none" }}>Categories</List.Item>
+    <Box className={classes.header}>
+      <Image src="./logo.svg" />
+      <List className={classes.list}>
+        <List.Item
+          className={classes.list_item}
+          style={{ listStyleType: "none" }}
+        >
+          <Anchor className={classes.anchor}>Home</Anchor>
+        </List.Item>
+        <List.Item
+          className={classes.list_item}
+          style={{ listStyleType: "none" }}
+        >
+          <Anchor className={classes.anchor}>New</Anchor>
+        </List.Item>
+        <List.Item
+          className={classes.list_item}
+          style={{ listStyleType: "none" }}
+        >
+          <Anchor className={classes.anchor}>Popular</Anchor>
+        </List.Item>
+        <List.Item
+          className={classes.list_item}
+          style={{ listStyleType: "none" }}
+        >
+          <Anchor className={classes.anchor}>Trending</Anchor>
+        </List.Item>
+        <List.Item
+          className={classes.list_item}
+          style={{ listStyleType: "none" }}
+        >
+          <Anchor className={classes.anchor}>Categories</Anchor>
+        </List.Item>
       </List>
     </Box>
   );
