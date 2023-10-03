@@ -46,10 +46,13 @@ function Header() {
               style={{
                 alignSelf: "end",
                 cursor: "pointer",
+                marginBottom: "150px",
               }}
               onClick={() => setToggleMenu(!toggleMenu)}
             />
-            <List>
+            <List
+              style={{ display: "flex", flexDirection: "column", gap: "15px" }}
+            >
               <List.Item className={classes.list_item}>
                 <Anchor className={classes.anchor}>Home</Anchor>
               </List.Item>

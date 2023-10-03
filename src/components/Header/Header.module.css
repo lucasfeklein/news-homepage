@@ -50,5 +50,6 @@
 
   .anchor {
     font-size: 25px;
+    color: hsl(240, 100%, 5%);
   }
 }
