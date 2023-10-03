@@ -107,8 +107,30 @@
   row-gap: 30px;
 }
 
+.mobile_image {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   .title {
     font-size: 45px;
+  }
+}
+
+@media (max-width: 940px) {
+  .desktop_image {
+    display: none;
+  }
+
+  .mobile_image {
+    display: block;
+  }
+
+  .title_container {
+    flex-direction: column;
+  }
+
+  .content_container {
+    flex-direction: column;
   }
 }

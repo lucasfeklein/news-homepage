@@ -44,7 +44,15 @@ function Content() {
     <Box>
       <Box className={classes.content_container}>
         <Box className={classes.main_content}>
-          <Image src="./image-web-3-desktop.jpg" />
+          <Image
+            className={classes.desktop_image}
+            src="./image-web-3-desktop.jpg"
+          />
+          <Image
+            className={classes.mobile_image}
+            src="./image-web-3-mobile.jpg"
+          />
+
           <Box className={classes.title_container}>
             <Title className={classes.title}>
               The Bright Future of Web 3.0?
