@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 280px;
+  min-width: 350px;
 }
 
 .title_container {
@@ -69,6 +69,7 @@
   border-bottom: 1px solid hsl(233, 8%, 79%);
   padding-bottom: 30px;
   cursor: pointer;
+  margin-top: 30px;
 }
 
 .news_card:hover .news_subtitle {
@@ -133,5 +134,9 @@
   .content_container {
     flex-direction: column;
     gap: 50px;
+  }
+
+  .news_card {
+    margin-top: 30px;
   }
 }
