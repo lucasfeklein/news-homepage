@@ -117,7 +117,7 @@
   }
 }
 
-@media (max-width: 940px) {
+@media (max-width: 800px) {
   .desktop_image {
     display: none;
   }
