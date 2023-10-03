@@ -18,13 +18,37 @@
   color: hsl(236, 13%, 42%);
 }
 
+.fixedMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 70%;
+  background-color: white;
+}
+
 .anchor:hover {
   color: hsl(5, 85%, 63%);
   text-decoration: none;
 }
 
+.fullscreenOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Gray transparent background */
+  display: flex;
+  justify-content: end;
+  z-index: 999; /* Ensure it's on top of other content */
+}
+
 @media (max-width: 800px) {
   .list {
     display: none;
+  }
+
+  .anchor {
+    font-size: 25px;
   }
 }

@@ -14,7 +14,7 @@ function Header() {
       {size.width <= 800 ? ( // Render icon-menu for small screens
         <Image
           onClick={() => setToggleMenu(!toggleMenu)}
-          className={classes.menu_icon}
+          style={{ cursor: "pointer" }}
           src="./icon-menu.svg"
         />
       ) : (
@@ -38,24 +38,35 @@ function Header() {
         </List>
       )}
       {toggleMenu && ( // Render the fixed menu when the icon-menu is clicked
-        <div className={classes.fixedMenu}>
-          <List>
-            <List.Item>
-              <Anchor className={classes.anchor}>Home</Anchor>
-            </List.Item>
-            <List.Item>
-              <Anchor className={classes.anchor}>New</Anchor>
-            </List.Item>
-            <List.Item>
-              <Anchor className={classes.anchor}>Popular</Anchor>
-            </List.Item>
-            <List.Item>
-              <Anchor className={classes.anchor}>Trending</Anchor>
-            </List.Item>
-            <List.Item>
-              <Anchor className={classes.anchor}>Categories</Anchor>
-            </List.Item>
-          </List>
+        <div className={classes.fullscreenOverlay}>
+          <div className={classes.fixedMenu}>
+            <Image
+              src="./icon-menu-close.svg"
+              w={40}
+              style={{
+                alignSelf: "end",
+                cursor: "pointer",
+              }}
+              onClick={() => setToggleMenu(!toggleMenu)}
+            />
+            <List>
+              <List.Item className={classes.list_item}>
+                <Anchor className={classes.anchor}>Home</Anchor>
+              </List.Item>
+              <List.Item className={classes.list_item}>
+                <Anchor className={classes.anchor}>New</Anchor>
+              </List.Item>
+              <List.Item className={classes.list_item}>
+                <Anchor className={classes.anchor}>Popular</Anchor>
+              </List.Item>
+              <List.Item className={classes.list_item}>
+                <Anchor className={classes.anchor}>Trending</Anchor>
+              </List.Item>
+              <List.Item className={classes.list_item}>
+                <Anchor className={classes.anchor}>Categories</Anchor>
+              </List.Item>
+            </List>
+          </div>
         </div>
       )}
     </Box>
