@@ -62,6 +62,7 @@ function Content() {
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
+                gap: "20px",
               }}
             >
               <Text color="hsl(236, 13%, 42%)">
