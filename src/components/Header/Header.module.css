@@ -25,37 +25,16 @@
   width: 70%;
   background-color: white;
   transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Define a custom animation for the sliding effect */
-@keyframes slideIn {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-/* Define a custom animation for the reverse sliding effect */
-@keyframes slideOut {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100%);
-  }
-}
-
-/* Apply the reverse animation when the active class is removed */
-.fixedMenu:not(.active) {
-  animation: slideOut 0.3s ease-in-out forwards;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 /* Apply the animation when the active class is present */
 .fixedMenu.active {
-  animation: slideIn 0.3s ease-in-out forwards;
+  transform: translateX(0);
+}
+
+.fixedMenu:not(.active) {
+  transform: translateX(100%);
 }
 
 .anchor:hover {
