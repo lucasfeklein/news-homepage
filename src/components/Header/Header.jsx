@@ -5,6 +5,7 @@ function Header() {
   return (
     <Box className={classes.header}>
       <Image src="./logo.svg" />
+      <Image className={classes.menu_icon} src="./icon-menu.svg" />
       <List className={classes.list}>
         <List.Item
           className={classes.list_item}
