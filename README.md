@@ -1,9 +1,15 @@
-# React + Vite
+# Frontend Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A junior Frontend challenge fully responsive news homepage form from Frontend Mentor to keep practicing
 
-Currently, two official plugins are available:
+## Demo link
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# news-homepage
+[https://phenomenal-bavarois-b7b01b.netlify.app](https://phenomenal-bavarois-b7b01b.netlify.app)
+
+## Desktop preview
+
+![Desktop](./public/desktop-preview.png)
+
+## Mobile preview
+
+<img src='./public/mobile-preview.png' width="400"/>
